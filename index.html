@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Juanzo Virtual Garage Sale</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>The 2nd-HAND STORE U NEED</h1>
+  <h2>Sign-up and buy now!</h2>
+    <form>
+    <fieldset>
+      <label for="name">Name:</label>
+      <input type="text" name="name" required><br><br>
+      <label for="address">Address:</label>
+      <input type="text" name="address" required><br><br>
+      <label for="city">City:</label>
+      <input type="text" name="city" required><br><br>
+      <label for="state">State:</label>
+      <input type="text" name="state" id="state" required 
+         maxlength="2" placeholder="2-character code"><br><br>
+      <label for="zip">Zip:</label>
+      <input type="text" name="zip" id="zip" required 
+         placeholder="must be 5 digits" 
+         pattern="^\d{5}(-\d{4})?$" 
+         title="5 digits or 5 digits and 4 digits separated by a dash"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" autofocus required><br><br> 
+      <label for="phone">Phone:</label>
+      <input type="tel" name="phone" id="phone" required
+         placeholder="999-999-9999" 
+         pattern="\d{3}[\-]\d{3}[\-]\d{4}" 
+         title="Must be 999-999-999 format"><br><br>
+    <div class="questions">
+      <label> Would you like to receive promotional offers?   </label><br><br>
+      <input type="radio" name="promotional_offers" value="yes">Yes
+      <input type="radio" name="promotional_offers" value="no">No<br><br> 
+      <label> Available items to purchase:   </label><br><br>
+      <select id ="item" name="Available items to purchase:" size="3" multiple><br> 
+        <option value="shirt">Shirt</option>
+        <option value="pants">Pants</option>
+        <option value="shoes">Shoes</option>
+        <option value="jacket">Jacket</option>
+        <option value="hat">Hat</option>
+        <option value="bag">Bag</option>
+        <option value="sunglasses">Sunglasses</option>
+        <option value="watch">Watch</option>
+      </select><br><br>
+      <label> Comments:</label><br>
+      <textarea name="comments" placeholder="If you have any comments, please enter them here."></textarea> 
+    </div>
+      <input type="submit" name="submit" value="Submit">
+      <input type="reset" name="reset" id="reset">
+   </fieldset>
+    </form>
+</body>
+</html>
